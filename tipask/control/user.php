@@ -54,7 +54,7 @@ class usercontrol extends base {
             $this->setting['code_register'] && $this->checkcode(); //检查验证码
             $user = $_ENV['user']->get_by_username($username);
             $user && $this->message("用户名 $username 已经存在!", 'user/register');
-            // todo 如果开启ucenter
+            //  如果开启ucenter
             if ($this->setting["ucenter_open"]) {
                 $this->load('ucenter');
                 $_ENV['ucenter']->register();

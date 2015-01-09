@@ -15,7 +15,7 @@ class ucentermodel {
         require_once TIPASK_ROOT . '/uc_client/client.php';
     }
 
-    /* 同步uc注册 */
+    /* 同步uc登陆 */
 
     function login($username, $password) {
         $tuser = $_ENV['user']->get_by_username($username);
@@ -29,7 +29,10 @@ class ucentermodel {
         if ($uid > 0) {
             $user = $this->db->fetch_first("SELECT * FROM " . DB_TABLEPRE . "user WHERE uid='$uid'");
             if (!$user) {
+                // todo 此用户来至于ucenter 第一次登陆
                 $_ENV['user']->add($username, $password, $email, $uid);
+                //加财富值
+                $this->base->credit($uid, $this->base->setting['credit1_register'], $this->base->setting['credit2_register']); //注册增加积分
             }
             if ($user['password'] != $password) {
                 $this->db->query("UPDATE " . DB_TABLEPRE . "user SET password='$password' WHERE uid=$uid");
@@ -47,7 +50,7 @@ class ucentermodel {
         }
     }
 
-    /*  todo 同步uc注册   */
+    /*  同步uc注册   */
     function register() {
         $activeuser = uc_get_user($this->base->post['username']);
         if ($activeuser) {
@@ -73,6 +76,10 @@ class ucentermodel {
         } else {
             $_ENV['user']->add($this->base->post['username'], $this->base->post['password'], $this->base->post['email'], $uid);
             $_ENV['user']->refresh($uid);
+
+            //  todo 加上财富值
+            $this->base->credit($uid, $this->base->setting['credit1_register'], $this->base->setting['credit2_register']); //注册增加积分
+
             $ucsynlogin = uc_user_synlogin($uid);
             $this->base->message('注册成功' . $ucsynlogin . '<br><a href="' . $_SERVER['PHP_SELF'] . '">继续</a>');
         }

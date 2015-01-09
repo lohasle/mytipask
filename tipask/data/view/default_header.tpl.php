@@ -22,7 +22,13 @@
             var g_site_name = "<?=$setting['site_name']?>";
             var g_prefix = "<?=$setting['seo_prefix']?>";
             var g_suffix = "<?=$setting['seo_suffix']?>";
-            var g_uid = <?=$user['uid']?>;</script>
+            var g_uid = <?=$user['uid']?>;
+            $(document).on('focus','#search-kw',function(){
+                $(this).parent().addClass('active');
+            }).on('blur','#search-kw',function(){
+                $(this).parent().removeClass('active');
+            });
+        </script>
     </head>
     <body>
         <div class="js-fixed">
@@ -39,7 +45,11 @@
                     </ul>
                     <div class="tuser-top-inner">
                         <? if(0!=$user['uid']) { ?>                        <ul class="tuser-login">
-                            <li class="tuser-bar"><a href="<?=SITE_URL?>?user/default.html"><?=$user['username']?></a></li>
+                            <li class="tuser-bar"><a href="<?=SITE_URL?>?user/default.html"><?=$user['username']?></a>
+                                <span style="margin: 0"><?=$user['grouptitle']?></span>
+                                <span style="margin: 0"> 财富:<?=$user['credit2']?></span>
+                                <span style="margin-left: 0;margin-right: 6px">经验:<?=$user['credit1']?></span>
+                            </li>
                             <li id="myqa" class="tuser_menu">
                                 <span class="ismore"><a target="_blank" href="<?=SITE_URL?>?user/ask/2.html">我的问答</a><i class="ar-ico"></i></span>
                                 <div class="tuser-more-list">
@@ -84,8 +94,8 @@
                     <div class="searchbox">
                         <form name="searchform"  action="<?=SITE_URL?>?question/search.html" method="post">
                             <span class="round"><input autocomplete="off" maxlength="100" placeholder="<?=$setting['search_placeholder']?>" class="js-sh-ipt input_key" tabindex="1" name="word" id="search-kw" value="<?=$word?>" /></span>
-                            <span class="button"><input type="button" id="search_btn" class="js-search-bt s_btn" value="搜索答案" /></span>
-                            <span class="button"><input type="button" id="ask_btn" class="js-ask-bt s_btn" value="我要提问" /></span>
+                            <span class="button"><input type="button" id="search_btn" style="position: relative;left: -3px;" class="js-search-bt s_btn" value="搜索答案" /></span>
+                            <span class="button"><input type="button" id="ask_btn" style="position: relative;left: -2px;" class="js-ask-bt s_btn" value="我要提问" /></span>
                         </form>
                     </div>
                 </div>

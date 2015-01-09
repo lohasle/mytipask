@@ -114,9 +114,11 @@ em {font-style: normal;color:#E63A00;}
 #container .resultinfo{color:#777777;width: 570px;font-size: 14px;font-weight: lighter;line-height: 24px;font-family: "microsoft yahei";}
 .resultinfo a{margin-left: 5px;text-decoration:underline;}
 #searchmod{font-size: 12px;margin-top: 23px;padding-bottom: 1.5em;}
-.round{background:url('search-bg.png') no-repeat -304px 0;border:1px solid #b6b6b6;border-color:#7b7b7b #b6b6b6 #b6b6b6 #7b7b7b;display:inline-block;height:30px;margin-right:3px;vertical-align:top;width:430px}
+.round{  display: inline-block;  height: 30px;  vertical-align: top;  width: 430px;  border: 1px solid #42b31a;  }
+.round.active{box-shadow: 1px 1px 1px #cccccc inset;-webkit-box-shadow: 1px 1px 1px #cccccc inset;-moz-box-shadow: 1px 1px 1px #cccccc inset}
 .input_key{-webkit-appearance:none;background:#fff;border:0;font:16px/22px arial;height:22px;margin:5px 0 0 7px;outline:0;padding:0;width:390px}
-.s_btn {background: url("search-bg.png") repeat scroll 0 0 #DDDDDD;border: 0 none;cursor: pointer;font-size: 14px;height: 32px;padding: 0;width: 95px;}
+.s_btn {  background: #42b31a;  border: 0 none;  cursor: pointer;  font-size: 14px;  height: 32px;  padding: 0;  width: 95px;  color: whitesmoke;  }
+.s_btn:hover {  background: #3ea919;  }
 #qa-tabcard {background: url("ctab.png") repeat-x scroll 0 0 transparent;margin-top: 1.87em;}
 #qa-tabcard ul {height: 35px;overflow: hidden;}
 #qa-tabcard ul li {background: url("ctab_li.png") no-repeat scroll 0 center transparent;float: left;font-size: 14px;height: 35px;line-height: 35px;margin-left: -2px;padding: 0 15px;}
@@ -145,15 +147,16 @@ em {font-style: normal;color:#E63A00;}
 #rs th {font-size: 14px;font-weight: 400;line-height: 19px;text-align: left;vertical-align: top;white-space: nowrap;}
 #rs td {width: 5%;}
 /*navbox 导航栏*/
-#navbox{margin: auto;text-align: left;width: 980px;}
+#navbox{margin: auto;text-align: left;width: 100%;  background: #42b31a;}
 .main-nav, .main-nav .navlist, .main-nav .navlist li a, .main-nav .navlist li a span.s1 i, .main-nav .total {/*background: url("nav_box.png") no-repeat scroll 0 -80px transparent;*/}
-.main-nav {background-color:/* #40B50E*/#06d35a;background-repeat: repeat-x;height: 40px;line-height: 40px;margin-top: 14px;overflow: hidden;width: 980px;}
+.main-nav {background-color:/* #40B50E*/#42b31a;background-repeat: repeat-x;height: 40px;line-height: 40px;margin-right: auto;
+    margin-left: auto;;margin-top: 14px;overflow: hidden;width: 980px;}
 .main-nav .navlist {background-position: 0 -120px;float: left;font-size: 14px;}
 .main-nav .navlist li {float: left;font-family: "microsoft yahei";margin-right: -2px;}
 .main-nav .navlist li a {background-position: 100% -256px;color: #FFFFFF;display: block;text-align: center;text-decoration: none;width: 94px;line-height:40px;height: 40px;}
 .main-nav .navlist li a span {cursor: pointer;display: block;width: 100%;}
 .main-nav .navlist .last a {background-position: 0 -223px;}
-.main-nav .navlist li.on a, .main-nav .navlist li.on:hover a, .main-nav .navlist li:hover a, .main-nav .navlist li.hover a {background-color: /*#099B00*/#05AD4E;background-position: 0 -40px;}
+.main-nav .navlist li.on a, .main-nav .navlist li.on:hover a, .main-nav .navlist li:hover a, .main-nav .navlist li.hover a {background-color: /*#099B00*/#338914;background-position: 0 -40px;}
 .main-nav .total {background-position: 100% -160px;color: #FFFFFF;float: right;padding-right: 18px;}
 /*页面导航*/
 .nav-line{ margin:0 auto; width:980px; height:32px; line-height:32px;font-family:simsun;}
@@ -263,7 +266,7 @@ em {font-style: normal;color:#E63A00;}
 .pagination {border-top: 1px solid #E0E0E0;margin-left: -1px;text-align:center;}
 .pagination li {border-right: 1px solid #DCDCDC;float: left;text-align: center;}
 .pagination li span {color: #0063C8;cursor: pointer;display: block;height: 32px;line-height: 32px;width: 150px;}
-.pagination li.spanhover span{background-color: /*#68B2FC*/ #05AD4E;color: #FFFFFF;cursor: default;}
+.pagination li.spanhover span{background-color: /*#68B2FC*/ #338914;color: #FFFFFF;cursor: default;}
 
 /*首页分类问题Tab*/
 .switc-tab{ padding:0 0 0 15px; border-bottom:1px solid #b2cce7;}
@@ -710,9 +713,9 @@ input:hover{border-color:#3EA201;}
 .code-input{float: left;margin: 0 5px 0 6px;border: 1px solid #D6D6D6;font-size: 16px;font-family: "Microsoft YaHei";font-weight: bold;height: 30px;line-height: 30px;width: 80px;box-shadow: 2px 2px 2px #F0F0F0 inset;}
 .credit_input{margin: 0 5px 0 6px;border: 1px solid #D6D6D6;font-size: 14px;font-family: "Microsoft YaHei";height: 25px;line-height: 25px;width: 50px;box-shadow: 2px 2px 2px #F0F0F0 inset;}
 .normal-button, .normal-button:hover{border: 0 none;color: #FFFFFF;cursor: pointer;display: inline-block;font-family: "Microsoft YaHei";font-size: 14px;height: 34px;outline: medium none;width: 96px;}
-.normal-button{background:url("buttons.png") no-repeat scroll 0 0 transparent;}
-.normal-button{background-position: 0px -38px;}
-.normal-button:hover{background-position: 0px -77px;}
+.normal-button{/*background:url("buttons.png") no-repeat scroll 0 0 transparent;*/}
+.normal-button{/*background-position: 0px -38px;*/background: #42b31a}
+.normal-button:hover{/*background-position: 0px -77px;*/background:#3ea919 }
 .btn, .btn span, .btn button {background: url("buttons-all.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);cursor: pointer;display: inline-block;margin: 0;outline: 0 none;}
 .btn-1 {background-color: #F2F2F2;padding-left: 2px;background-position: 0 0;height: 26px;line-height: 26px;}
 .btn-1 span, .btn-1 button {background-position: 100% 0;color: #3EAF0E;height: 26px;padding: 0 10px 0 8px;text-shadow: 0 2px 2px #FFFFFF;}
