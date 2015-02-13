@@ -12,7 +12,7 @@ return array (
     'answers' => '0',
     'adopts' => '0',
     'grouptitle' => '书童',
-    'avatar' => 'http://127.0.0.1/Tipask/tipask/css/default/avatar.gif',
+    'avatar' => 'http://127.0.0.1/tipask/tipask/css/default/avatar.gif',
   ),
   1 => 
   array (
@@ -20,13 +20,13 @@ return array (
     'groupid' => '1',
     'username' => 'admin',
     'gender' => '女',
-    'lastlogin' => '5小时前',
+    'lastlogin' => '2015/01/20 13:27',
     'credit2' => '2500',
     'questions' => '11',
     'answers' => '0',
     'adopts' => '0',
     'grouptitle' => '超级管理员',
-    'avatar' => 'http://127.0.0.1/Tipask/tipask/css/default/avatar.gif',
+    'avatar' => 'http://127.0.0.1/tipask/tipask/css/default/avatar.gif',
   ),
   2 => 
   array (
@@ -40,23 +40,9 @@ return array (
     'answers' => '5',
     'adopts' => '3',
     'grouptitle' => '书童',
-    'avatar' => 'http://127.0.0.1/Tipask/tipask/css/default/avatar.gif',
+    'avatar' => 'http://127.0.0.1/tipask/tipask/css/default/avatar.gif',
   ),
   3 => 
-  array (
-    'uid' => '2',
-    'groupid' => '7',
-    'username' => 'test',
-    'gender' => '女',
-    'lastlogin' => '2014/12/29 10:45',
-    'credit2' => '20',
-    'questions' => '0',
-    'answers' => '0',
-    'adopts' => '0',
-    'grouptitle' => '书童',
-    'avatar' => 'http://127.0.0.1/Tipask/tipask/css/default/avatar.gif',
-  ),
-  4 => 
   array (
     'uid' => '23',
     'groupid' => '7',
@@ -68,9 +54,9 @@ return array (
     'answers' => '0',
     'adopts' => '0',
     'grouptitle' => '书童',
-    'avatar' => 'http://127.0.0.1/Tipask/tipask/css/default/avatar.gif',
+    'avatar' => 'http://127.0.0.1/tipask/tipask/css/default/avatar.gif',
   ),
-  5 => 
+  4 => 
   array (
     'uid' => '22',
     'groupid' => '7',
@@ -82,9 +68,9 @@ return array (
     'answers' => '0',
     'adopts' => '0',
     'grouptitle' => '书童',
-    'avatar' => 'http://127.0.0.1/Tipask/tipask/css/default/avatar.gif',
+    'avatar' => 'http://127.0.0.1/tipask/tipask/css/default/avatar.gif',
   ),
-  6 => 
+  5 => 
   array (
     'uid' => '19',
     'groupid' => '7',
@@ -96,21 +82,35 @@ return array (
     'answers' => '0',
     'adopts' => '0',
     'grouptitle' => '书童',
-    'avatar' => 'http://127.0.0.1/Tipask/tipask/css/default/avatar.gif',
+    'avatar' => 'http://127.0.0.1/tipask/tipask/css/default/avatar.gif',
   ),
-  7 => 
+  6 => 
   array (
-    'uid' => '24',
+    'uid' => '25',
     'groupid' => '7',
-    'username' => 'testtip',
+    'username' => '金胖胖',
     'gender' => '女',
-    'lastlogin' => '2015/01/06 14:38',
-    'credit2' => '19',
+    'lastlogin' => '2015/01/31 17:47',
+    'credit2' => '20',
     'questions' => '0',
     'answers' => '0',
     'adopts' => '0',
     'grouptitle' => '书童',
-    'avatar' => 'http://127.0.0.1/Tipask/tipask/css/default/avatar.gif',
+    'avatar' => 'http://127.0.0.1/tipask/tipask/css/default/avatar.gif',
+  ),
+  7 => 
+  array (
+    'uid' => '2',
+    'groupid' => '7',
+    'username' => 'test',
+    'gender' => '女',
+    'lastlogin' => '2014/12/29 10:45',
+    'credit2' => '20',
+    'questions' => '0',
+    'answers' => '0',
+    'adopts' => '0',
+    'grouptitle' => '书童',
+    'avatar' => 'http://127.0.0.1/tipask/tipask/css/default/avatar.gif',
   ),
 );
 ?>
